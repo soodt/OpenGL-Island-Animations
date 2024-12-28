@@ -35,6 +35,12 @@
     <ClInclude Include="dependencies\GLFW\include\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\tiny_obj_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjModelLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="dependencies\GLFW\lib\glfw3.lib" />

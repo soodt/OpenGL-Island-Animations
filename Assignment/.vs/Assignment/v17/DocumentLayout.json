@@ -1,26 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\",
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\Assignment.vcxproj.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment.vcxproj.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\lab3_results\\lab3_cornellbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dependencies\\glad\\include\\khrplatform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\DEPENDENCIES\\GLAD\\INCLUDE\\GLAD.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:DEPENDENCIES\\GLAD\\INCLUDE\\GLAD.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\glad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dependencies\\glad\\include\\glad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:dependencies\\glad\\include\\khrplatform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,35 +34,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Assignment.vcxproj.xml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\Assignment.vcxproj.xml",
-              "RelativeDocumentMoniker": "Assignment.vcxproj.xml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\Assignment.vcxproj.xml",
-              "RelativeToolTip": "Assignment.vcxproj.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-12-24T07:53:42.09Z",
+              "Title": "lab3_cornellbox.cpp",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\lab3_results\\lab3_cornellbox.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\lab3_results\\lab3_cornellbox.cpp",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\lab3_results\\lab3_cornellbox.cpp",
+              "RelativeToolTip": "..\\..\\..\\lab3_results\\lab3_cornellbox.cpp",
+              "ViewState": "AgIAAEcDAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-28T00:25:20.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "glad.c",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\glad.c",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\glad.c",
               "RelativeDocumentMoniker": "source\\glad.c",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\glad.c",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\glad.c",
               "RelativeToolTip": "source\\glad.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-18T20:04:02.681Z"
+              "WhenOpened": "2024-12-18T20:04:02.681Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "khrplatform.h",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h",
               "RelativeDocumentMoniker": "dependencies\\glad\\include\\khrplatform.h",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\dependencies\\glad\\include\\khrplatform.h",
               "RelativeToolTip": "dependencies\\glad\\include\\khrplatform.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -71,11 +71,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "glad.h",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\glad.h",
+              "DocumentIndex": 3,
+              "Title": "inttypes.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\dependencies\\glad\\include\\glad.h",
               "RelativeDocumentMoniker": "dependencies\\glad\\include\\glad.h",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\dependencies\\glad\\include\\glad.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\dependencies\\glad\\include\\glad.h",
               "RelativeToolTip": "dependencies\\glad\\include\\glad.h",
               "ViewState": "AQIAAEwAAAAAAAAAAAAtwFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -85,11 +85,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\main.cpp",
               "RelativeDocumentMoniker": "source\\main.cpp",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\GraphicsProject\\Assignment\\source\\main.cpp",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\V2\\NewProject\\Assignment\\source\\main.cpp",
               "RelativeToolTip": "source\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-18T19:02:04.086Z",
               "EditorCaption": ""

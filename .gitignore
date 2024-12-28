@@ -1,0 +1,4 @@
+# Ignore Visual Studio auto-generated files
+Assignment/.vs/
+# Ignore all .ipch files
+*.ipch
