@@ -1,13 +1,23 @@
 ﻿  main.cpp
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\ObjModelLoader.h(36,52): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\ObjModelLoader.h(36,52): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   (compiling source file 'source/main.cpp')
   
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(117,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(118,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(122,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(123,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(124,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(125,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(320,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Dell\Desktop\V2\NewProject\Assignment\source\main.cpp(344,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-  Assignment.vcxproj -> C:\Users\Dell\Desktop\V2\NewProject\Assignment\x64\Debug\Assignment.exe
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(324,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(522,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(523,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(527,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(528,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(529,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(530,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(649,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(650,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(651,32): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(987,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(1014,71): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(1043,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(1059,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(1074,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(1089,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 4\Assignment\source\main.cpp(589,1): warning C4715: 'initialize': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Assignment.vcxproj -> C:\Users\Dell\Desktop\NewProject 4\Assignment\x64\Debug\Assignment.exe
