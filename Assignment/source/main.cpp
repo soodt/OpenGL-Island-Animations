@@ -1,3 +1,4 @@
+#pragma once
 #include "glad.h"
 #include "glfw3.h"
 #include <iostream>
@@ -8,10 +9,20 @@
 
 #define TINYOBJLOADER_IMPLEMENTATION
 #include "tiny_obj_loader.h"
-#include "ObjModelLoader.h"
-#include "Animation.h"
+#include "Animation_wm.h"
+
+#include <glm.hpp>
+#include <gtc/matrix_transform.hpp>
+#include <gtc/type_ptr.hpp>
+
+#include "filesystem_local.h"
+#include "shader_m.h"
+#include "camera.h"
+#include "animator.h"
+#include "model_animation.h"
 
 #pragma comment(lib,"assimp-vc140-mt.lib")
+#pragma warning(disable: 4996)
 
 // Global variables to store window state
 bool isFullscreen = true;
@@ -312,23 +323,23 @@ struct Terrain {
         glDeleteShader(fragmentShader);
     }
     void checkShaderCompileErrors(unsigned int shader, const std::string& type) {
-    int success;
-    char infoLog[1024];
-    if (type == "VERTEX") {
-        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-        if (!success) {
-            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-            std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+        int success;
+        char infoLog[1024];
+        if (type == "VERTEX") {
+            glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+            if (!success) {
+                glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+                std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+            }
+        }
+        else if (type == "FRAGMENT") {
+            glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+            if (!success) {
+                glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+                std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+            }
         }
     }
-    else if (type == "FRAGMENT") {
-        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-        if (!success) {
-            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-            std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
-        }
-    }
-}
     void checkShaderProgramLinkingErrors(unsigned int program) {
         int success;
         char infoLog[1024];
@@ -408,7 +419,7 @@ struct Skybox {
     }
 
     void Draw(glm::mat4 view, glm::mat4 projection) {
-        glDepthFunc(GL_LEQUAL); 
+        glDepthFunc(GL_LEQUAL);
         glUseProgram(shaderProgram);
 
         // Removing translation part of the view matrix
@@ -530,7 +541,7 @@ private:
         glDeleteShader(vertexShader);
         glDeleteShader(fragmentShader);
     }
-     void checkShaderCompileErrors(unsigned int shader, const std::string& type) {
+    void checkShaderCompileErrors(unsigned int shader, const std::string& type) {
         int success;
         char infoLog[1024];
         if (type == "VERTEX") {
@@ -624,13 +635,21 @@ int initialize() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(800, 600, "OpenGL Window", NULL, NULL);
+    window = glfwCreateWindow(800, 600, "Toward a Futuristic Emerald Isle - By Tanuj Sood", NULL, NULL);
     if (!window) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
+
+    // Check if the context is current
+    if (glfwGetCurrentContext() == window) {
+        std::cout << "Context is current for this window." << std::endl;
+    }
+    else {
+        std::cerr << "Context is not current for this window." << std::endl;
+    }
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to initialize GLAD" << std::endl;
@@ -654,30 +673,7 @@ int main() {
         std::cout << "Initialization failed" << std::endl;
     }
     
-
-    Model Building1("resources/Residential_Buildings_001.obj", "resources/textures/Hotel_Hous_AO.png");
-    if (Building1.vertices.empty()) {
-        std::cerr << "Model loading failed. Exiting." << std::endl;
-        return -1;
-    }
-
-    // Number of instances
-   // unsigned int numInstances = 500;
-
-    // Instance data (model matrices)
-    //std::vector<glm::mat4> instanceMatrices(numInstances);
-    //for (unsigned int i = 0; i < numInstances; i++) {
-    //    glm::mat4 model = glm::mat4(1.0f);n
-    //    float x = (rand() % 100 - 50) / 10.0f;
-    //    float z = (rand() % 100 - 50) / 10.0f;
-    //    model = glm::translate(model, glm::vec3(x, 0.0f, z));
-    //    float angle = (rand() % 360);
-    //    model = glm::rotate(model, glm::radians(angle), glm::vec3(0.0f, 1.0f, 0.0f));
-    //    float scale = (rand() % 10) / 10.0f + 0.5f;
-    //    model = glm::scale(model, glm::vec3(scale));
-    //    instanceMatrices[i] = model;
-    //}
-
+    Model Building1("resources/building/Residential_Buildings_001.obj");
 
     // Number of instances per row/column
     unsigned int gridWidth = 3; // Number of instances in x direction
@@ -691,7 +687,7 @@ int main() {
     std::mt19937 gen(rd()); // Standard mersenne_twister_engine seeded with rd()
     std::uniform_real_distribution<> scaleDist(0.5f, 1.5f); // Scale between 0.5 and 1.5
     std::uniform_real_distribution<> rotationDist(0.0f, 360.0f); // Rotation between 0 and 360 degrees
-    std::uniform_real_distribution<> heightVariation(-0.2f, 0.2f); // Slight height variation
+    //std::uniform_real_distribution<> heightVariation(-0.2f, 0.2f); // Slight height variation
 
     std::vector<glm::mat4> instanceMatrices(numInstances);
     for (unsigned int y = 0; y < gridHeight; y++) {
@@ -706,7 +702,7 @@ int main() {
             //float scale = scaleDist(gen);
             float scale = 0.7;
             float rotation = rotationDist(gen);
-            float heightOffset = heightVariation(gen);
+            float heightOffset = 0.0; 
 
             model = glm::translate(model, glm::vec3(xPos, heightOffset, zPos));
             model = glm::rotate(model, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -723,22 +719,28 @@ int main() {
     glBufferData(GL_ARRAY_BUFFER, numInstances * sizeof(glm::mat4), &instanceMatrices[0], GL_STATIC_DRAW);
 
     // Set up instance attribute in VAO
-    glBindVertexArray(Building1.VAO);
-    glEnableVertexAttribArray(3);
-    glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)0);
-    glEnableVertexAttribArray(4);
-    glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(1 * sizeof(glm::vec4)));
-    glEnableVertexAttribArray(5);
-    glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(2 * sizeof(glm::vec4)));
-    glEnableVertexAttribArray(6);
-    glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(3 * sizeof(glm::vec4)));
+    for (int i{}; i < Building1.meshes.size(); i++)
+    {
+        unsigned int BuildingVao = Building1.meshes[i].VAO;
 
-    glVertexAttribDivisor(3, 1);
-    glVertexAttribDivisor(4, 1);
-    glVertexAttribDivisor(5, 1);
-    glVertexAttribDivisor(6, 1);
+        glBindVertexArray(BuildingVao);
+        glEnableVertexAttribArray(3);
+        glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)0);
+        glEnableVertexAttribArray(4);
+        glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(1 * sizeof(glm::vec4)));
+        glEnableVertexAttribArray(5);
+        glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(2 * sizeof(glm::vec4)));
+        glEnableVertexAttribArray(6);
+        glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(glm::vec4), (void*)(3 * sizeof(glm::vec4)));
 
+        glVertexAttribDivisor(3, 1);
+        glVertexAttribDivisor(4, 1);
+        glVertexAttribDivisor(5, 1);
+        glVertexAttribDivisor(6, 1);
 
+    }
+
+    // Instancing Shader Code
     const char* instancingvertexShaderSource = R"(
         #version 460 core
         layout (location = 0) in vec3 aPos;
@@ -762,6 +764,7 @@ int main() {
     )";
 
 
+    // Shader Code
     const char* defaultvertexShaderSource = R"(
         #version 460 core
         layout (location = 0) in vec3 aPos;
@@ -805,7 +808,6 @@ int main() {
     )";
 
 
-    //FragColor = vec4(diffuse, 1.0) * texture(ourTexture, TexCoords);
     // Shader compilation
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &instancingvertexShaderSource, NULL);   //using isntancing vertex shader here
@@ -941,7 +943,7 @@ int main() {
     }
 )";
 
-    // Compiling d Shader
+    // Compile Grid Shader
     unsigned int gridVertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(gridVertexShader, 1, &gridVertexShaderSource, NULL);
     glCompileShader(gridVertexShader);
@@ -961,7 +963,7 @@ int main() {
 
     Terrain terrain(400, 400);
 
-	// -------------------------- ANIMATION STUFF--------------------------
+    // -------------------------- ANIMATION STUFF--------------------------
     // Shaders
     const char* vertexShaderSourceAnim = R"(
         #version 460 core
@@ -983,7 +985,8 @@ int main() {
            FragColor = vec4(1.0, 0.5, 0.2, 1.0);
         };
     )";
-    
+
+    // Compile Grid Shader
     unsigned int animVertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(animVertexShader, 1, &vertexShaderSourceAnim, NULL);
     glCompileShader(animVertexShader);
@@ -1000,29 +1003,7 @@ int main() {
     glDeleteShader(animVertexShader);
     glDeleteShader(animFragmentShader);
 
-
-    float verticesTriag[] = {
-        0.5f, -0.5f, 0.0f, // bottom right
-        -0.5f, -0.5f, 0.0f, // bottom left
-        0.0f, 0.5f, 0.0f  // top 
-    };
-
-    unsigned int VBOTriag, VAOTriag;
-    glGenVertexArrays(1, &VAOTriag);
-    glGenBuffers(1, &VBOTriag);
-
-    glBindVertexArray(VAOTriag);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBOTriag);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(verticesTriag), verticesTriag, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-    glBindVertexArray(0);
     unsigned int VAOAnim, VBOAnim, EBOAnim;
-    // Testing animation 
     LoadModel("resources/wind_tower.obj", VAOAnim, VBOAnim, EBOAnim);
 
     std::vector<std::string> faces{
@@ -1034,7 +1015,13 @@ int main() {
     "resources/skybox/back.jpg"
     };
 
-    Skybox skybox(faces); // Create the skybox 
+    Skybox skybox(faces); // Create the skybox
+
+    // VAMPIRE MODEL------------------------------------------
+    Shader ourShader("anim_model.vs", "anim_model.fs");
+    Model ourModel(FileSystem::getPath("resources/vampire/dancing_vampire.dae"));
+    Animation danceAnimation(FileSystem::getPath("resources/vampire/dancing_vampire.dae"), &ourModel);
+    Animator animator(&danceAnimation);
 
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_BLEND);
@@ -1064,27 +1051,20 @@ int main() {
 
         terrain.Draw(view, projection, glm::vec3(100.0f), cameraPos);
 
+        // INSTANCED MODEL LOADING FOR BUILDINGS
         glUseProgram(shaderProgram);
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         glUniform1i(glGetUniformLocation(shaderProgram, "ourTexture"), 0);
-        glBindVertexArray(Building1.VAO);
-        glDrawArraysInstanced(GL_TRIANGLES, 0, Building1.vertices.size(), numInstances); // Instanced drawing
-        glBindVertexArray(0);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, Building1.textures_loaded[0].id);
 
-
-/*
-        glm::mat4 model = glm::mat4(2.0f); // make sure to initialize matrix to identity matrix first
-        model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
-        model = glm::translate(model, glm::vec3(1.0, 3.0f, 0.0f));
-        glUseProgram(animShaderProgram);
-        glUniformMatrix4fv(glGetUniformLocation(animShaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
-        glUniformMatrix4fv(glGetUniformLocation(animShaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-        glUniformMatrix4fv(glGetUniformLocation(animShaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        glBindVertexArray(VAOTriag);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-        glBindVertexArray(0);
-*/
+        for (unsigned int i = 0; i < Building1.meshes.size(); i++)
+        {
+            glBindVertexArray(Building1.meshes[i].VAO);
+            glDrawElementsInstanced(GL_TRIANGLES, static_cast<unsigned int>(Building1.meshes[i].indices.size()), GL_UNSIGNED_INT, 0, numInstances);
+            glBindVertexArray(0);
+        }
 
         // windmill 1
         glUseProgram(animShaderProgram);
@@ -1146,6 +1126,26 @@ int main() {
         glBindVertexArray(VAOAnim);
         glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
+
+
+        // ---------------------SKELETAL MODEL-----------------------
+        animator.UpdateAnimation(deltaTime);
+
+        ourShader.use();
+        ourShader.setMat4("projection", projection);
+        ourShader.setMat4("view", view);
+
+        auto transforms = animator.GetFinalBoneMatrices();
+        for (int i = 0; i < transforms.size(); ++i)
+            ourShader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]", transforms[i]);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(100.0f, 9.0f, 100.0f)); 
+        //model = glm::scale(model, glm::vec3(.5f, .5f, .5f));	
+        ourShader.setMat4("model", model);
+        ourModel.Draw(ourShader);
+
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }

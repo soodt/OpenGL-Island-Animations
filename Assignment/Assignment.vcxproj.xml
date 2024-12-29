@@ -138,6 +138,12 @@
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="animator.h" />
+    <ClInclude Include="animdata.h" />
+    <ClInclude Include="assimp_glm_helpers.h" />
+    <ClInclude Include="bone.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="dependencies\glad\include\glad.h" />
     <ClInclude Include="dependencies\glad\include\khrplatform.h" />
     <ClInclude Include="dependencies\GLFW\include\glfw3.h" />
@@ -165,8 +171,16 @@
     <ClInclude Include="dependencies\glm\vec3.hpp" />
     <ClInclude Include="dependencies\glm\vec4.hpp" />
     <ClInclude Include="dependencies\glm\vector_relational.hpp" />
-    <ClInclude Include="source\Animation.h" />
+    <ClInclude Include="dependencies\stb\stb_image.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="model_animation.h" />
+    <ClInclude Include="root_directory.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="shader_m.h" />
+    <ClInclude Include="source\Animation_wm.h" />
+    <ClInclude Include="source\filesystem_local.h" />
     <ClInclude Include="source\ObjModelLoader.h" />
+    <ClInclude Include="source\Skeleton.h" />
     <ClInclude Include="source\tiny_obj_loader.h" />
   </ItemGroup>
   <ItemGroup>

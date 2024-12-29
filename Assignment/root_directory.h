@@ -1,0 +1,1 @@
+const char * logl_root = "C:/Users/Dell/Documents/GraphicsProject/Assignment";

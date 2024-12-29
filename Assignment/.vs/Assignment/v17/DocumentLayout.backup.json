@@ -1,14 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\",
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\MSXML.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\MEMORYAPI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\COMBASEAPI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\USERS\\DELL\\DESKTOP\\NEWPROJECT 5\\ASSIGNMENT\\ROOT_DIRECTORY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:ROOT_DIRECTORY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:anim_model.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:anim_model.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\tiny_obj_loader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\tiny_obj_loader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\ObjModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D6099-D2AB-4D9F-9108-68B9EC223C7C}|Assignment.vcxproj|solutionrelative:source\\ObjModelLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\model_animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:model_animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\filesystem_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\filesystem_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader_m.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shader_m.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Animation_wm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\Animation_wm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Skeleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\Skeleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,9 +74,61 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 149,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "msxml.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\msxml.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\msxml.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\msxml.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\msxml.h",
+              "ViewState": "AgIAALcAAAAAAAAAAAAgwMkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:29:58.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "memoryapi.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\memoryapi.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\memoryapi.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\memoryapi.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\memoryapi.h",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAgwPwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:29:26.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "combaseapi.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\combaseapi.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\combaseapi.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\combaseapi.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\combaseapi.h",
+              "ViewState": "AgIAAF0DAAAAAAAAAAAAAF0DAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:29:23.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "root_directory.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\root_directory.h",
+              "RelativeDocumentMoniker": "root_directory.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\root_directory.h",
+              "RelativeToolTip": "root_directory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:24:45.673Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -34,29 +143,160 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Animation.h",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\Animation.h",
-              "RelativeDocumentMoniker": "source\\Animation.h",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\Animation.h",
-              "RelativeToolTip": "source\\Animation.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "tiny_obj_loader.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\tiny_obj_loader.h",
+              "RelativeDocumentMoniker": "source\\tiny_obj_loader.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\tiny_obj_loader.h",
+              "RelativeToolTip": "source\\tiny_obj_loader.h",
+              "ViewState": "AQIAACQBAAAAAAAAAAAtwDQBAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-28T18:42:15.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T10:19:43.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "filesystem_local.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\filesystem_local.h",
+              "RelativeDocumentMoniker": "source\\filesystem_local.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\filesystem_local.h",
+              "RelativeToolTip": "source\\filesystem_local.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.404Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\main.cpp",
               "RelativeDocumentMoniker": "source\\main.cpp",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 4\\Assignment\\source\\main.cpp*",
-              "RelativeToolTip": "source\\main.cpp*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\main.cpp",
+              "RelativeToolTip": "source\\main.cpp",
+              "ViewState": "AgIAAGwEAAAAAAAAAAAwwHoEAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-28T18:42:15.385Z",
+              "WhenOpened": "2024-12-29T10:19:43.447Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "model_animation.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\model_animation.h",
+              "RelativeDocumentMoniker": "model_animation.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\model_animation.h",
+              "RelativeToolTip": "model_animation.h",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwDsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "mesh.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\mesh.h",
+              "RelativeDocumentMoniker": "mesh.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\mesh.h",
+              "RelativeToolTip": "mesh.h",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAQwGIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "animation.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\animation.h",
+              "RelativeDocumentMoniker": "animation.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\animation.h",
+              "RelativeToolTip": "animation.h",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAewBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "shader.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader.h",
+              "RelativeDocumentMoniker": "shader.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader.h",
+              "RelativeToolTip": "shader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "shader_m.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader_m.h",
+              "RelativeDocumentMoniker": "shader_m.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\shader_m.h",
+              "RelativeToolTip": "shader_m.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Animation_wm.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Animation_wm.h",
+              "RelativeDocumentMoniker": "source\\Animation_wm.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Animation_wm.h",
+              "RelativeToolTip": "source\\Animation_wm.h",
+              "ViewState": "AQIAACoAAAAAAAAAAAAewDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "anim_model.fs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.fs",
+              "RelativeDocumentMoniker": "anim_model.fs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.fs",
+              "RelativeToolTip": "anim_model.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-29T10:19:43.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "anim_model.vs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.vs",
+              "RelativeDocumentMoniker": "anim_model.vs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\anim_model.vs",
+              "RelativeToolTip": "anim_model.vs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-29T10:19:43.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Skeleton.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Skeleton.h",
+              "RelativeDocumentMoniker": "source\\Skeleton.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\Skeleton.h",
+              "RelativeToolTip": "source\\Skeleton.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObjModelLoader.h",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\ObjModelLoader.h",
+              "RelativeDocumentMoniker": "source\\ObjModelLoader.h",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\NewProject 5\\Assignment\\source\\ObjModelLoader.h",
+              "RelativeToolTip": "source\\ObjModelLoader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-29T10:19:43.58Z"
             }
           ]
         }

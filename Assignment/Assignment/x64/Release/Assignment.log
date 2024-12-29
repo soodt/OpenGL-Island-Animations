@@ -1,0 +1,46 @@
+﻿  main.cpp
+C:\Users\Dell\Desktop\NewProject 5\Assignment\bone.h(45,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\bone.h(56,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\bone.h(67,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\model_animation.h(186,37): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\animation.h(31,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\animation.h(32,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\animation.h(56,44): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\animation.h(98,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'source/main.cpp')
+  
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(365,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(591,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(592,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(596,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(597,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(598,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(599,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(703,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(704,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(1035,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(1084,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(1100,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(1115,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(1130,50): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Generating code
+C:\Users\Dell\Desktop\NewProject 5\Assignment\source\main.cpp(666): warning C4715: 'initialize': not all control paths return a value
+  10 of 1866 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    19 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Assignment.vcxproj -> C:\Users\Dell\Desktop\NewProject 5\Assignment\x64\Release\Assignment.exe

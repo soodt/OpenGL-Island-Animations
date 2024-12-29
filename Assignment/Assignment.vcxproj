@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\GLFW\include;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\stb</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\Desktop\NewProject 5\Assignment\dependencies\Assimp\include;$(SolutionDir);$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\GLFW\include;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\stb</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
