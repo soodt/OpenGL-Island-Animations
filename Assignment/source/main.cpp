@@ -294,19 +294,49 @@ struct Terrain {
         unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
         glCompileShader(vertexShader);
+        checkShaderCompileErrors(vertexShader, "VERTEX");
         // Fragment Shader
         unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
         glCompileShader(fragmentShader);
+        checkShaderCompileErrors(fragmentShader, "FRAGMENT");
 
         // Shader Program
         shaderProgram = glCreateProgram();
         glAttachShader(shaderProgram, vertexShader);
         glAttachShader(shaderProgram, fragmentShader);
         glLinkProgram(shaderProgram);
+        checkShaderProgramLinkingErrors(shaderProgram);
         // delete shaders as I already linked it
         glDeleteShader(vertexShader);
         glDeleteShader(fragmentShader);
+    }
+    void checkShaderCompileErrors(unsigned int shader, const std::string& type) {
+    int success;
+    char infoLog[1024];
+    if (type == "VERTEX") {
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+        if (!success) {
+            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+            std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+        }
+    }
+    else if (type == "FRAGMENT") {
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+        if (!success) {
+            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+            std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+        }
+    }
+}
+    void checkShaderProgramLinkingErrors(unsigned int program) {
+        int success;
+        char infoLog[1024];
+        glGetProgramiv(program, GL_LINK_STATUS, &success);
+        if (!success) {
+            glGetProgramInfoLog(program, 1024, NULL, infoLog);
+            std::cerr << "ERROR::PROGRAM_LINKING_ERROR of type: PROGRAM\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+        }
     }
 
     void Draw(glm::mat4 view, glm::mat4 projection, glm::vec3 lightPos, glm::vec3 viewPos) {
@@ -487,18 +517,46 @@ private:
         unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
         glCompileShader(vertexShader);
-
+        checkShaderCompileErrors(vertexShader, "VERTEX");
         unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
         glCompileShader(fragmentShader);
-
+        checkShaderCompileErrors(fragmentShader, "FRAGMENT");
         shaderProgram = glCreateProgram();
         glAttachShader(shaderProgram, vertexShader);
         glAttachShader(shaderProgram, fragmentShader);
         glLinkProgram(shaderProgram);
-
+        checkShaderProgramLinkingErrors(shaderProgram);
         glDeleteShader(vertexShader);
         glDeleteShader(fragmentShader);
+    }
+     void checkShaderCompileErrors(unsigned int shader, const std::string& type) {
+        int success;
+        char infoLog[1024];
+        if (type == "VERTEX") {
+            glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+            if (!success) {
+                glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+                std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+            }
+        }
+        else if (type == "FRAGMENT") {
+            glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+            if (!success) {
+                glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+                std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+            }
+        }
+    }
+
+    void checkShaderProgramLinkingErrors(unsigned int program) {
+        int success;
+        char infoLog[1024];
+        glGetProgramiv(program, GL_LINK_STATUS, &success);
+        if (!success) {
+            glGetProgramInfoLog(program, 1024, NULL, infoLog);
+            std::cerr << "ERROR::PROGRAM_LINKING_ERROR of type: PROGRAM\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+        }
     }
 };
 
