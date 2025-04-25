@@ -1,2 +1,1 @@
-# GraphicsProject
-Computer Graphics project in OpenGL: Towards an emerald isle
+C++ project in OpenGL: Towards an emerald isle. Showcasing Island/landscape graphics and animations
